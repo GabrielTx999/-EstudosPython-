@@ -1,0 +1,16 @@
+#Sorteio de número e chute do usuário.
+
+import random     #Random neste caso serve para gerar números aleatórios.
+
+sort = random.randint(1, 10)    #Vai gerar o número inteiro aleatório dentro do intervalo definido.
+
+num = int(input("Digite um valor entre 1 e 10: "))
+
+if num == sort:
+    print(f"Você acertou!")
+elif sort < num:
+    print(f"O número sorteado é menor!")          #Estrutura condicional.
+else:
+    print("O número sorteado é maior!")
+                                                        
+print(f"O número sorteado foi {sort}")    
