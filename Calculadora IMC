@@ -1,0 +1,26 @@
+#IMC
+nome = input("Digite seu nome: ")
+altura = float(input("Digite sua altura: "))      #Entrada de dados.
+peso = float(input("Digite seu peso:  "))
+
+imc = peso / altura**2        #processamento de dados.
+
+print()
+print(f"{nome} de acordo com seu IMC {imc:.2f}")   #Saída de dados.
+
+if imc < 16:
+    print(f"Magreza grave")
+elif imc < 17:
+    print(f"Magreza moderada")
+elif imc < 18.5:
+    print(f"Magreza leve")               #estrutura condicional.
+elif imc < 25:
+    print(f"Saudável")
+elif imc < 30:
+    print(f"Sobrepeso")
+elif imc < 35:
+    print(f"Obesidade grau I")
+elif imc < 40:
+    print(f"Obesidade grau II")
+else:
+    print(f"Obesidade grau III")
